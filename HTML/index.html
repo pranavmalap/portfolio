@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../CSS/mycss.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" id="checkbtn">
+          <i class="fas fa-bars hamburg"></i>
+        </label>
+        <div class="logo-div">
+          <img src="../Images/Logo.jpg" alt="logo" class="logo" />
+        </div>
+        <ul>
+          <li><a href="#about-sec" class="active">About</a></li>
+          <li><a href="#projects-sec">Projects</a></li>
+          <li><a href="#services-section">Services</a></li>
+          <li><a href="#contact-sec">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="about-section my-4" id="about-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 py-3">
+            <h2>Hi there, I'm <span style="color: #ff6584">Pranav</span></h2>
+            <br />
+            <p>
+              Hi, my name is Pranav. I am a web development enthusiast with a
+              strong desire to create user-friendly solutions. Currently, I am
+              working as an intern, creating UI/UX-friendly components and
+              contributing to back-end development with frameworks such as
+              CodeIgniter. I lead a balanced life and spend my free time playing
+              chess, swimming, and going to the gym. These activities keep me
+              focused and energized, both intellectually and physically. I'm
+              constantly eager to learn new things and cooperate with others,
+              whether it's through technology or sharing life's simple
+              pleasures.
+            </p>
+
+            <button type="button" id="cvbtn" class="btn">Download CV</button>
+
+            <div class="social-media-hadles px-2 py-3">
+              <a
+                href="https://github.com/pranavmalap"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i
+                  class="fa-brands fa-square-github fa-2x"
+                  style="color: #ffffff"
+                ></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/pranavmalap/"
+                target="_blank"
+                aria-label="linkedin"
+              >
+                <i class="fa-brands fa-linkedin fa-2x" style="color: #0077b5">
+                </i>
+              </a>
+              <a
+                href="https://wa.me/7666935854"
+                target="_blank"
+                aria-label="whatsapp"
+                ><i
+                  class="fa-brands fa-square-whatsapp fa-2x"
+                  style="color: #25d366"
+                ></i
+              ></a>
+              <a
+                href="https://www.instagram.com/pravv__08/"
+                target="_blank"
+                aria-label="instagram"
+              >
+                <i
+                  class="fa-brands fa-square-instagram fa-2x instagram-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-4 about-right">
+            <img src="../Images/Pranav_img.jpg" alt="myImage" id="abt-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects my-5" id="projects-sec">
+      <!---------------------------------------------project 1 -->
+      <div class="container">
+        <h3>Recent <span style="color: #ff6584">Projects</span></h3>
+        <div class="project1">
+          <div class="row my-5">
+            <div class="col-md-2 my-4">
+              <img src="../Images/recipe.png" alt="recipeImg" id="recipe-img" />
+            </div>
+            <div class="col-md-10">
+              <div class="project-heading">
+                <div class="nameAndGit">
+                  <h4>Recepie Sharing Website</h4>
+                  <a
+                    href="https://github.com/pranavmalap/foodieconnect"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github fa-2x"
+                      style="color: #ffffff"
+                    ></i
+                  ></a>
+                </div>
+
+                <div class="languages py-2">
+                  <div class="language tech1">React Js</div>
+                  <div class="language tech2">Node Js</div>
+                  <div class="language tech3">Express Js</div>
+                  <div class="language tech4">Mongo DB</div>
+                </div>
+              </div>
+              <p>
+                recipe-sharing platform where users can upload and manage their
+                recipes. Users can create an account, log in, interact with
+                recipes by liking, disliking, and commenting on them, and view
+                their uploaded recipes in their profile. The admin has special
+                access to oversee all the recipes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--------------------------------------- project 2   -->
+        <div class="project2">
+          <div class="row my-5">
+            <div class="col-md-2 my-5">
+              <img
+                src="../Images/pharmacy.jpg"
+                alt="pharmacyImg"
+                id="pharmacyImg"
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="project-heading">
+                <h4>Pharmacy Management System</h4>
+                <div class="languages py-2">
+                  <div class="language tech1">HTML</div>
+                  <div class="language tech2">CSS</div>
+                  <div class="language tech3">JAVA</div>
+                  <div class="language tech4">SWINGS</div>
+                  <div class="language tech5">MYSQL</div>
+                </div>
+              </div>
+              <p>
+                Allows pharmacy staff to efficiently add, update, delete, and
+                search for medicines based on their name or code. The system
+                ensures accurate tracking of inventory, facilitates easy access
+                to medication details, and improves overall efficiency in
+                managing pharmaceutical products. With the ability to search by
+                medicine name or code, users can quickly find specific products,
+                make necessary adjustments to stock levels, and maintain an
+                up-to-date inventory.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------------- project 3   -->
+        <div class="project3">
+          <div class="row my-5">
+            <div class="col-md-2">
+              <img
+                src="../Images/chatting.jpg"
+                alt="ChattingImg"
+                id="chattingImg"
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="project-heading">
+                <h4>Chatting Web Application</h4>
+                <div class="languages py-2">
+                  <div class="language tech1">HTML</div>
+                  <div class="language tech2">CSS</div>
+                  <div class="language tech3">JSP</div>
+                  <div class="language tech4">SERVLETS</div>
+                  <div class="language tech5">MYSQL</div>
+                </div>
+              </div>
+              <p>
+                The system implements features like user registration and
+                authentication, ensuring secure access for users. It also
+                includes a messaging functionality, allowing seamless
+                communication within the platform. These features enhance user
+                experience by providing secure and efficient interactions
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-sec" id="services-section">
+      <div class="container mt-5">
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="service-card-inner">
+              <div class="service-card" id="card1">
+                <!-- Front Side -->
+                <div class="service-card-content service-card-front">
+                  <img
+                    src="../Images/webdevelopment.jpg"
+                    alt="Service 1 Image"
+                  />
+                  <h5><b>Web Development</b></h5>
+                  <p>
+                    Building and maintaining websites and web applications for
+                    seamless user experiences.
+                  </p>
+                  <button class="btn btn-primary" onclick="flipCard('card1')">
+                    Learn More
+                  </button>
+                </div>
+                <!-- Back Side -->
+                <div class="service-card-content service-card-back">
+                  <h5>More Details</h5>
+                  <p>
+                    Web development involves creating and maintaining websites
+                    or web apps. It combines front-end design for user
+                    interaction and back-end logic for data management. The goal
+                    is to build secure, responsive, and scalable web solutions
+                    for a seamless user experience.
+                  </p>
+                  <button class="btn btn-primary" onclick="flipCard('card1')">
+                    Go Back
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="service-card-inner">
+              <div class="service-card" id="card2">
+                <!-- Front Side -->
+                <div class="service-card-content service-card-front">
+                  <img src="../Images/SEO.jpg" alt="Service 2 Image" />
+                  <h5><b>SEO</b></h5>
+                  <p>
+                    Improve website visibility and ranking on search engines for
+                    better reach.
+                  </p>
+                  <button class="btn btn-primary" onclick="flipCard('card2')">
+                    Learn More
+                  </button>
+                </div>
+                <!-- Back Side -->
+                <div class="service-card-content service-card-back">
+                  <h5>More Details</h5>
+                  <p>
+                    SEO enhances website content, structure, and performance to
+                    boost search engine rankings. By optimizing keywords and
+                    building quality backlinks, SEO drives organic traffic and
+                    improves user engagement, helping businesses reach their
+                    target audience.
+                  </p>
+                  <button class="btn btn-primary" onclick="flipCard('card2')">
+                    Go Back
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="service-card-inner">
+              <div class="service-card" id="card3">
+                <!-- Front Side -->
+                <div class="service-card-content service-card-front">
+                  <img src="../Images/UI_UX.jpg" alt="Service 3 Image" />
+                  <h5>UI/ UX</h5>
+                  <p>
+                    Creating intuitive and visually appealing designs for an
+                    enhanced user experience.
+                  </p>
+                  <button class="btn btn-primary" onclick="flipCard('card3')">
+                    Learn More
+                  </button>
+                </div>
+                <!-- Back Side -->
+                <div class="service-card-content service-card-back">
+                  <h5>More Details</h5>
+                  <p>
+                    UI/UX design focuses on enhancing user experience through
+                    intuitive layouts and attractive visuals. It ensures easy
+                    navigation and an enjoyable interaction, combining both
+                    functionality and aesthetic appeal for optimal user
+                    satisfaction.
+                  </p>
+                  <button class="btn btn-primary" onclick="flipCard('card3')">
+                    Go Back
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section my-5" id="contact-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 my-3">
+            <h2>Contact Me</h2>
+            <form action="" class="form contact-form">
+              <input
+                type="text"
+                class="input form-control"
+                placeholder="Full name"
+              />
+              <br />
+              <input
+                type="email"
+                class="input form-control"
+                placeholder="email"
+              />
+              <br />
+              <textarea
+                name="message"
+                id="message"
+                class="form-control textarea"
+                placeholder="message"
+              ></textarea>
+              <br />
+              <button type="sumbit" id="cnt-btn">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-6 my-3">
+            <div class="visitor-card">
+              <div class="name-designation">
+                <h3>Pranav Malap</h3>
+              </div>
+              <div class="details my-2">
+                <p>Organization: Ace360Degree</p>
+                <p>Title: Software Developer Intern</p>
+                <p>Phone: 91+ 7666935854</p>
+                <p>Email: pranavmalap1@gmail.com</p>
+                <p>
+                  Address: 18 Upper, Mindspace, Chincholi Bunder Road, New Link
+                  Rd, Malad West, Mumbai, Maharashtra 400064
+                </p>
+                <button id="vcf-btn">Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

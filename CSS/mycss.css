@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+:root {
+  --background: #1c1c2d;
+  --pink: #ff6584;
+  --dark: #232333;
+  --navbar: #20203c;
+  --darkpink: #dc4462;
+  --cardcolor: #a294f9;
+  --cardflipcolor: #cdc1ff;
+  --cardborder: #001a6e;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background) !important;
+  font-size: 1rem;
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem; /* 14.4px for smaller screens */
+  }
+  h1 {
+    font-size: 1.8rem; /* ~28px */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* ~24px */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* ~20px */
+  }
+
+  p {
+    font-size: 1rem; /* ~16px */
+  }
+
+  small {
+    font-size: 0.875rem; /* ~14px */
+  }
+}
+
+/* Navbar Starts here */
+
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: var(--navbar);
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo-div {
+  position: relative;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 1px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+  line-height: 80px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--pink);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--darkpink);
+}
+
+nav ul li a.active:hover {
+  background-color: #2d2d4e;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+#check {
+  position: absolute;
+  right: 5px;
+  display: none;
+}
+#check:checked ~ ul {
+  left: 0;
+}
+#checkbtn {
+  position: absolute;
+  right: 20px;
+  line-height: 80px;
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  #checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    transition: left 1s ease;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  nav ul li {
+    margin: 20px 0;
+  }
+
+  .logo {
+    position: relative;
+    top: 3px;
+  }
+}
+
+/* About Section Starts here */
+
+.social-media-hadles a {
+  text-decoration: none;
+}
+.about-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  opacity: 0.7;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-right img:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+#cvbtn {
+  background-color: var(--pink);
+  border: 2px solid var(--darkpink);
+  color: white;
+  border-radius: 0 25px 0 25px;
+  cursor: pointer;
+}
+
+.instagram-icon {
+  font-size: 48px; /* Adjust size as needed */
+  background: linear-gradient(
+    45deg,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f77737
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*  ----------------------------------Project Section Starts here */
+
+/* .projects {
+  transform: translateY(100px);
+} */
+
+#recipe-img {
+  width: 100%;
+}
+#pharmacyImg {
+  width: 100%;
+}
+#chattingImg{
+  width: 100%;
+}
+.languages {
+  display: flex;
+  margin-left: 0px;
+  gap: 10px;
+}
+
+.languages a {
+  text-decoration: none;
+}
+
+.nameAndGit {
+  display: flex;
+  gap: 15px;
+}
+.language {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  width: auto;
+  padding: 10px 10px;
+}
+.tech1 {
+  background-color: #833ab4;
+}
+.tech2 {
+  background-color: #8a0c7f;
+}
+.tech3 {
+  background-color: #0eb725;
+}
+.tech4 {
+  background-color: #d58d10;
+}
+.tech5 {
+  background-color: #14c2c8;
+}
+
+/*------------------------------------------- Services CSS */
+
+.service-card-inner {
+  perspective: 1000px;
+}
+
+.service-card {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.service-card-front p,
+h5,
+b {
+  color: #001a6e;
+}
+
+.service-card-back p {
+  color: #001a6e;
+}
+.service-card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 2px solid var(--cardborder);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--cardcolor);
+  box-shadow: 0px 4px 8px var(--cardborder);
+}
+
+.service-card-front img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.service-card-back {
+  color: #001a6e;
+  transform: rotateY(180deg);
+  background-color: val(--cardflipcolor);
+}
+
+.service-card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Contact Form css */
+.contact-form {
+  padding-top: 20px;
+}
+
+.contact-form input {
+  padding: 10px 10px;
+}
+
+.contact-form textarea {
+  padding: 10px 20px;
+}
+
+#cnt-btn {
+  padding: 10px 10px;
+  background-color: var(--pink);
+  color: var(--background);
+  border-radius: 15px 15px;
+  cursor: pointer;
+}
+
+.visitor-card {
+  background-color: var(--cardcolor);
+  border-radius: 15px;
+  padding: 15px 35px;
+  box-shadow: 0px 4px 8px var(--cardborder);
+}
+
+.name-designation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.name-designation h3,
+h6 {
+  color: var(--cardborder);
+  font-weight: bolder;
+}
+
+.details p {
+  color: var(--cardborder);
+}
+
+#vcf-btn {
+  background-color: var(--cardborder);
+  padding: 10px 10px;
+  border-radius: 15px;
+}
