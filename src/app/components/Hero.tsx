@@ -58,14 +58,14 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="hero-glow relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 text-center"
+      className="hero-glow relative flex min-h-dvh flex-col items-center justify-center overflow-hidden px-6 py-20 text-center"
     >
       <div className="section-container flex flex-col items-center">
-        <p className="hero-eyebrow mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[var(--text-secondary)]">
+        <p className="hero-eyebrow mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--text-secondary)] sm:tracking-[0.3em] md:text-sm">
           Working Student &amp; Internship Ready
         </p>
 
-        <h1 className="hero-name gradient-text text-5xl font-bold leading-tight md:text-7xl">
+        <h1 className="hero-name gradient-text text-4xl font-bold leading-tight sm:text-5xl md:text-7xl">
           {profile.name}
         </h1>
 
@@ -77,18 +77,24 @@ export default function Hero() {
           {profile.tagline}
         </p>
 
-        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
-          <Link href="/projects" className="hero-cta btn-primary">
+        <div className="mt-10 flex w-full max-w-xs flex-col items-center gap-3 sm:max-w-none sm:flex-row sm:gap-4">
+          <Link
+            href="/projects"
+            className="hero-cta btn-primary w-full justify-center sm:w-auto"
+          >
             View Projects
             <FontAwesomeIcon icon={faArrowRight} className="h-3.5 w-3.5" />
           </Link>
-          <Link href="/contact" className="hero-cta btn-secondary">
+          <Link
+            href="/contact"
+            className="hero-cta btn-secondary w-full justify-center sm:w-auto"
+          >
             Contact Me
           </Link>
           <a
             href={profile.resumeUrl}
             download
-            className="hero-cta btn-secondary"
+            className="hero-cta btn-secondary w-full justify-center sm:w-auto"
           >
             Download CV
             <FontAwesomeIcon icon={faFileArrowDown} className="h-3.5 w-3.5" />

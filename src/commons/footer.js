@@ -17,7 +17,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-[var(--border-subtle)] bg-[var(--bg-secondary)]">
-      <div className="section-container grid gap-10 py-14 md:grid-cols-3">
+      <div className="section-container grid gap-10 py-10 sm:py-14 md:grid-cols-3">
         <div>
           <p className="text-lg font-bold text-white">
             {profile.name}
@@ -49,13 +49,13 @@ export default function Footer() {
           <p className="text-sm font-semibold uppercase tracking-wider text-white">
             Connect
           </p>
-          <div className="mt-4 flex items-center gap-4">
+          <div className="-ml-2 mt-2 flex items-center gap-1">
             <a
               href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-[var(--text-secondary)] transition-colors hover:text-white"
+              className="rounded-lg p-2 text-[var(--text-secondary)] transition-colors hover:text-white"
             >
               <FontAwesomeIcon icon={faGithub} className="h-5 w-5" />
             </a>
@@ -64,14 +64,14 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-[var(--text-secondary)] transition-colors hover:text-white"
+              className="rounded-lg p-2 text-[var(--text-secondary)] transition-colors hover:text-white"
             >
               <FontAwesomeIcon icon={faLinkedin} className="h-5 w-5" />
             </a>
             <a
               href={`mailto:${profile.email}`}
               aria-label="Email"
-              className="text-[var(--text-secondary)] transition-colors hover:text-white"
+              className="rounded-lg p-2 text-[var(--text-secondary)] transition-colors hover:text-white"
             >
               <FontAwesomeIcon icon={faEnvelope} className="h-5 w-5" />
             </a>

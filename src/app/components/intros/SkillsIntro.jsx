@@ -33,16 +33,16 @@ export default function SkillsIntro({ onComplete }) {
   return (
     <div
       ref={containerRef}
-      className="h-screen bg-[var(--theme-primary)] flex flex-col items-center justify-center space-y-4"
+      className="h-dvh bg-[var(--theme-primary)] flex flex-col items-center justify-center space-y-3 px-6 text-center sm:space-y-4"
     >
-      <div className="intro-line text-6xl text-white font-bold">
-        You've got requirements,
+      <div className="intro-line text-4xl text-white font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        A Toolkit
       </div>
-      <div className="intro-line text-6xl text-white font-bold">
-        I've got the stack.
+      <div className="intro-line text-4xl text-white font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        Built Through Real Projects
       </div>
-      <div className="intro-line text-6xl text-white font-bold">
-        Here's what I bring.
+      <div className="intro-line text-4xl text-[var(--accent)] font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        Here&apos;s What I Bring
       </div>
     </div>
   );

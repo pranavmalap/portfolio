@@ -4,6 +4,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Hero from "./components/Hero";
 import ProjectCard from "./components/ProjectCard";
 import AskAI from "./components/AskAI";
+import BotAvatar from "./components/BotAvatar";
 import { profile, skills, projects } from "@/data/profile";
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
       <Hero />
 
       {/* About */}
-      <section className="section-container py-24">
+      <section className="section-container py-14 sm:py-20 md:py-24">
         <div className="grid gap-10 md:grid-cols-3">
           <h2 className="font-heading text-3xl font-bold text-white md:col-span-1">
             About Me
@@ -26,7 +27,7 @@ export default function Home() {
       </section>
 
       {/* Skills preview */}
-      <section className="section-container py-24">
+      <section className="section-container py-14 sm:py-20 md:py-24">
         <div className="mb-10 flex items-center justify-between">
           <h2 className="font-heading text-3xl font-bold text-white">
             Tech Stack
@@ -61,7 +62,7 @@ export default function Home() {
       </section>
 
       {/* Featured projects */}
-      <section className="section-container py-24">
+      <section className="section-container py-14 sm:py-20 md:py-24">
         <div className="mb-10 flex items-center justify-between">
           <h2 className="font-heading text-3xl font-bold text-white">
             Featured Projects
@@ -82,9 +83,10 @@ export default function Home() {
       </section>
 
       {/* Ask AI */}
-      <section className="section-container py-24">
-        <div className="mb-10 text-center">
-          <h2 className="font-heading text-3xl font-bold text-white">
+      <section className="section-container py-14 sm:py-20 md:py-24">
+        <div className="mb-10 flex flex-col items-center text-center">
+          <BotAvatar className="h-14 w-14" />
+          <h2 className="font-heading mt-4 text-3xl font-bold text-white">
             Ask AI about Pranav
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-[var(--text-secondary)]">

@@ -34,13 +34,17 @@ export default function ProjectsIntro({ onComplete }) {
   return (
     <div
       ref={containerRef}
-      className="h-screen bg-[var(--theme-primary)] flex flex-col items-center justify-center space-y-4"
+      className="h-dvh bg-[var(--theme-primary)] flex flex-col items-center justify-center space-y-3 px-6 text-center sm:space-y-4"
     >
-      <div className="intro-line text-6xl text-white font-bold">PROJECTS</div>
-      <div className="intro-line text-6xl text-white font-bold">
-        THAT MAKE ME
+      <div className="intro-line text-4xl text-white font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        PROJECTS
       </div>
-      <div className="intro-line text-6xl text-white font-bold">BLUSH</div>
+      <div className="intro-line text-4xl text-white font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        I&apos;VE SHIPPED
+      </div>
+      <div className="intro-line text-4xl text-[var(--accent)] font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        IN THE REAL WORLD
+      </div>
     </div>
   );
 }

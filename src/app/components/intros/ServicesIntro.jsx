@@ -34,16 +34,16 @@ export default function ServicesIntro({ onComplete }) {
   return (
     <div
       ref={containerRef}
-      className="h-screen bg-[var(--theme-primary)] flex flex-col items-center justify-center space-y-4"
+      className="h-dvh bg-[var(--theme-primary)] flex flex-col items-center justify-center space-y-3 px-6 text-center sm:space-y-4"
     >
-      <div className="intro-line text-6xl text-white font-bold">
-        You’ve got ideas,
+      <div className="intro-line text-4xl text-white font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        You&rsquo;ve got ideas,
       </div>
-      <div className="intro-line text-6xl text-white font-bold">
-        I’ve got the skills.
+      <div className="intro-line text-4xl text-white font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        I&rsquo;ve got the skills.
       </div>
-      <div className="intro-line text-6xl text-white font-bold">
-        Let’s make it happen.
+      <div className="intro-line text-4xl text-[var(--accent)] font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        Let&rsquo;s make it happen.
       </div>
     </div>
   );

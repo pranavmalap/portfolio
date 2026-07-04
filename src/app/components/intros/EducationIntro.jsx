@@ -34,16 +34,16 @@ export default function EducationIntro({ onComplete }) {
   return (
     <div
       ref={containerRef}
-      className="h-screen bg-[var(--theme-primary)] flex flex-col items-center justify-center space-y-4"
+      className="h-dvh bg-[var(--theme-primary)] flex flex-col items-center justify-center space-y-3 px-6 text-center sm:space-y-4"
     >
-      <div className="intro-line text-6xl text-white font-bold">
-        Learning never stops,
+      <div className="intro-line text-4xl text-white font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        Learning Never Stops,
       </div>
-      <div className="intro-line text-6xl text-white font-bold">
-        It just graduates.
+      <div className="intro-line text-4xl text-white font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        It Just Graduates.
       </div>
-      <div className="intro-line text-6xl text-white font-bold">
-        Here's where it began.
+      <div className="intro-line text-4xl text-[var(--accent)] font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+        Here&apos;s Where It Began.
       </div>
     </div>
   );

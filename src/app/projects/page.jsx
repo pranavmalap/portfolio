@@ -19,7 +19,7 @@ export default function ProjectsPage() {
         <ProjectsIntro key={pathname} onComplete={() => setShowContent(true)} />
       )}
       {showContent && (
-        <div className="section-container py-24">
+        <div className="section-container py-14 sm:py-20 md:py-24">
           <h1 className="font-heading text-4xl font-bold text-white">
             My Projects
           </h1>

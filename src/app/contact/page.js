@@ -33,7 +33,7 @@ export default function ContactPage() {
       {!showContent && <ContactIntro onComplete={() => setShowContent(true)} />}
 
       {showContent && (
-        <div className="section-container py-24">
+        <div className="section-container py-14 sm:py-20 md:py-24">
           <h1 className="font-heading text-4xl font-bold text-white">
             Get in Touch
           </h1>
@@ -47,27 +47,32 @@ export default function ContactPage() {
               <div className="card flex items-center gap-4 p-5">
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="h-5 w-5 text-[var(--accent)]"
+                  className="h-5 w-5 shrink-0 text-[var(--accent)]"
                 />
-                <a href={`mailto:${profile.email}`} className="text-sm text-white">
+                <a
+                  href={`mailto:${profile.email}`}
+                  className="min-w-0 break-words text-sm text-white"
+                >
                   {profile.email}
                 </a>
               </div>
               <div className="card flex items-center gap-4 p-5">
                 <FontAwesomeIcon
                   icon={faPhone}
-                  className="h-5 w-5 text-[var(--accent)]"
+                  className="h-5 w-5 shrink-0 text-[var(--accent)]"
                 />
-                <a href={`tel:${profile.phone}`} className="text-sm text-white">
+                <a href={`tel:${profile.phone}`} className="min-w-0 break-words text-sm text-white">
                   {profile.phone}
                 </a>
               </div>
               <div className="card flex items-center gap-4 p-5">
                 <FontAwesomeIcon
                   icon={faLocationDot}
-                  className="h-5 w-5 text-[var(--accent)]"
+                  className="h-5 w-5 shrink-0 text-[var(--accent)]"
                 />
-                <span className="text-sm text-white">{profile.location}</span>
+                <span className="min-w-0 break-words text-sm text-white">
+                  {profile.location}
+                </span>
               </div>
               <div className="card flex items-center gap-6 p-5">
                 <a

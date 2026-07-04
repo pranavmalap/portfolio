@@ -2,11 +2,8 @@
 
 import { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPaperPlane,
-  faRobot,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane, faUser } from "@fortawesome/free-solid-svg-icons";
+import BotAvatar from "./BotAvatar";
 
 interface Message {
   role: "user" | "assistant";
@@ -77,7 +74,7 @@ export default function AskAI() {
     <div className="card mx-auto flex w-full max-w-2xl flex-col overflow-hidden">
       <div
         ref={scrollRef}
-        className="flex max-h-96 min-h-72 flex-col gap-4 overflow-y-auto p-6"
+        className="flex max-h-80 min-h-64 flex-col gap-4 overflow-y-auto p-4 sm:max-h-96 sm:min-h-72 sm:p-6"
       >
         {messages.map((msg, i) => (
           <div
@@ -86,18 +83,13 @@ export default function AskAI() {
               msg.role === "user" ? "flex-row-reverse text-right" : ""
             }`}
           >
-            <div
-              className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full ${
-                msg.role === "user"
-                  ? "bg-[var(--accent)]"
-                  : "bg-[var(--bg-primary)] border border-[var(--border-subtle)]"
-              }`}
-            >
-              <FontAwesomeIcon
-                icon={msg.role === "user" ? faUser : faRobot}
-                className="h-3.5 w-3.5 text-white"
-              />
-            </div>
+            {msg.role === "user" ? (
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--accent)]">
+                <FontAwesomeIcon icon={faUser} className="h-3.5 w-3.5 text-white" />
+              </div>
+            ) : (
+              <BotAvatar className="h-8 w-8 shrink-0" />
+            )}
             <p
               className={`whitespace-pre-line rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
                 msg.role === "user"
@@ -119,7 +111,7 @@ export default function AskAI() {
           <button
             key={s}
             onClick={() => sendMessage(s)}
-            className="rounded-full border border-[var(--border-subtle)] px-3 py-1 text-xs text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)] hover:text-white"
+            className="rounded-full border border-[var(--border-subtle)] px-3 py-1.5 text-xs text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)] hover:text-white"
           >
             {s}
           </button>
