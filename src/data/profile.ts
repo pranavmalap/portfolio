@@ -46,16 +46,16 @@ export const profile = {
   name: "Pranav Malap",
   role: "Frontend Developer / AI Enthusiast",
   tagline:
-    "Full-stack developer building fast, clean web experiences — currently exploring where AI fits in.",
+    "Building impactful software through innovation, clean code, and continuous learning.",
   location: "Chemnitz, Germany",
   email: "pranavmalap.de@gmail.com",
   phone: "+49 15510669453",
-  // TODO: confirm exact GitHub / LinkedIn handles
+
   github: "https://github.com/pranavmalap",
   linkedin: "https://linkedin.com/in/pranavmalap",
   resumeUrl: "/resume/Pranav_Malap_Lebenslauf.pdf",
   about:
-    "Full-stack web developer currently pursuing an M.Sc. in Web Engineering at TU Chemnitz. I've shipped real business applications with React, Next.js, and PHP frameworks — modernizing legacy systems, improving UX, and building scalable features in professional environments. Looking for Working Student and internship roles in frontend, full-stack, or AI-adjacent development in Germany.",
+    "I'm a software developer currently pursuing an M.Sc. in Web Engineering at TU Chemnitz. With experience developing real-world business applications, I enjoy building clean, scalable, and user-focused software while continuously learning and embracing new technologies to solve meaningful problems.",
 };
 
 export const skills: SkillCategory[] = [
@@ -65,7 +65,14 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "Tailwind CSS", "Bootstrap", "GSAP", "Redux"],
+    items: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Bootstrap",
+      "GSAP",
+      "Redux",
+    ],
   },
   {
     category: "Backend",

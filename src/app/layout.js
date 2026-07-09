@@ -23,7 +23,7 @@ const poppins = Poppins({
 export const metadata = {
   title: "Pranav Malap — Frontend Developer / AI Enthusiast",
   description:
-    "Portfolio of Pranav Malap, a full-stack developer based in Chemnitz, Germany, pursuing an M.Sc. in Web Engineering at TU Chemnitz — looking for Working Student and internship roles.",
+    "Portfolio of Pranav Malap, a developer based in Chemnitz, Germany, pursuing an M.Sc. in Web Engineering at TU Chemnitz",
 };
 
 export default function RootLayout({ children }) {
